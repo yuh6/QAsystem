@@ -1,0 +1,15 @@
+<html>
+<head>
+  <title>Q&A</title>
+</head>
+<body>
+  {% if message %}
+  <p style="color:red">{{ message }}</p>
+  {% endif %}
+  <form action="/" method="post">
+    <legend>Enter your question here:</legend>
+    <p><input name="question" placeholder="Question" value="{{ question }}"></p>
+    <p><button type="submit">Submit</button></p>
+  </form>
+</body>
+</html>
